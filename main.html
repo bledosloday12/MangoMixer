@@ -41,3 +41,46 @@
         radial-gradient(ellipse 80% 40% at 100% 80%, rgba(255, 159, 67, 0.05), transparent);
     }
 
+    .wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo-icon { font-size: 1.75rem; }
+    .logo-text { font-weight: 700; font-size: 1.4rem; color: var(--mango); }
+    .tagline { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+
+    .wallet-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .wallet-addr {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--muted);
+      max-width: 160px;
+      overflow: hidden;
+      text-overflow: ellipsis;
